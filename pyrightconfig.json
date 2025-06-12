@@ -6,5 +6,6 @@
   "strictListInference": true,
   "strictSetInference": true,
   "strictDictionaryInference": true,
-  "reportPrivateUsage": "error"
+  "reportPrivateUsage": "error",
+  "typeCheckingMode": "standard"
 }
