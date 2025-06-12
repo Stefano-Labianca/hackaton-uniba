@@ -1,0 +1,86 @@
+Pensando alla sicurezza: una data importante come 
+passphrase, abbastanza lunga e personale, può davvero essere sicura?
+
+0206
+Possibile anno
+- 02/06/2024
+- 020624
+
+Fattore aureo
+1,618
+
+pi Grego
+3,141
+
+
+163, 184
+
+08/09/1930
+02/06/2024
+
+------
+
+
+-----------------
+
+Pensando alla sicurezza 
+dei nuovi moduli... Se dico 'Password Base, Chiave Derivata, Funzione Due' 
+e ci aggiungo un pizzico di 'SHA256', 
+sto parlando arabo o qualcuno capisce il livello di protezione che 
+stiamo implementando? È come una ricetta segreta
+
+
+PBKDF2 possibile funzione hash
+
+
+@MaryBytesCapisco, capisco! Ingredienti di alta qualità per una protezione 
+con i fiocchi. Mi piace! 👍
+
+@Bill_FixItBasta che la 'ricetta' non sia così 
+segreta da dimenticartela quando devi fare manutenzione, John! 😉
+
+salt: ricetta
+round: 11
+
+-------- --------------
+
+
+Da oggi per aprire i messaggi di posta c'è un 
+nuovo cerimoniale: prima un tocco di 'sapore' unico e 
+irripetibile, poi si stacca un 'biglietto d'ingresso' valido una volta. Chi sono?
+
+Ho implementato l'autenticazione a due fattori (2FA) sul mio account personale. La sicurezza prima di tutto!
+
+Potrebbe essre legato agli OPT CODE
+
+la passphrase potrebbe essere usata per trovare le prime coordinate
+
+----------
+
+setterino -> password del wifi
+
+Beale cipher
+E quelli che usano un testo di riferimento, come una poesia o un libro, e i numeri per 
+indicarne le iniziali delle parole? Voi non li odiate?
+
+
+
+------
+
+
+
+A volte per recuperare un dato specifico da un archivio immenso, non serve cercare, basta conoscere 
+l'indirizzo esatto: pagina, scaffale, parete e l'esadecimale giusto.
+
+#DataRetrieval #Archives
+
+Mostra/Nascondi commenti
+@MaryBytesPrecisione chirurgica! Come trovare un ago in un pagliaio conoscendone le coordinate GPS.
+@Bill_FixItCome l'indirizzo del mio ultimo stipendio, perso in un buco nero.
+
+
+--------
+
+
+Nome film preferito 
+Fatto di sangue fra due uomini per causa di una vedova... si sospettano moventi politici

@@ -1,0 +1,3971 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed Instagram di @JohnTheDev</title>
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #fafafa;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        background-color: #fff;
+        border-bottom: 1px solid #dbdbdb;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .feed-container {
+        max-width: 600px;
+        margin: auto;
+        padding: 1rem 0;
+      }
+      .post {
+        background-color: #fff;
+        border: 1px solid #dbdbdb;
+        border-radius: 3px;
+        margin-bottom: 2rem;
+      }
+      .post-header {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+      }
+      .post-header .username {
+        font-weight: bold;
+        margin-left: 0.5rem;
+      }
+      .post-content {
+        padding: 0 1rem;
+      }
+      .post-text {
+        margin: 0.5rem 0;
+      }
+      .hashtags {
+        color: #00376b;
+      }
+      .comments {
+        border-top: 1px solid #efefef;
+        padding: 0.5rem 1rem;
+      }
+      .comment {
+        margin: 0.3rem 0;
+      }
+      .comment .username {
+        font-weight: bold;
+        margin-right: 0.5rem;
+      }
+      .comments-toggle {
+        color: #999;
+        cursor: pointer;
+        padding: 0 1rem 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">John's DevLog 📱</div>
+    <div class="feed-container">
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena refactorizzato un modulo vecchio di 5 anni. Il codice è
+            così pulito ora che potrei mangiarci sopra! 🧼
+          </div>
+          <div class="hashtags">#CleanCode #Refactoring</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c0')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c0" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Wow, grande John! So che
+            lavoro c'è dietro. La sensazione è impagabile.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero che non sia un bug
+            nascosto che ti fa pulire lo schermo ogni volta che lo esegui, haha!
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Qualcuno ha mai provato a spiegare il concetto di 'null' a un non
+            programmatore? Missione impossibile. 😂
+          </div>
+          <div class="hashtags">#TechExplained #DevHumor</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c1')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c1" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ci ho provato con mia zia.
+            Ora pensa che io lavori con il 'nulla cosmico'.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Digli che è come cercare
+            qualcosa che non c'è, ma devi comunque cercarlo.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho ricevuto una richiesta di modifica 'urgente' all'ultimo minuto.
+            La vita da sviluppatore è anche questo! ⚡
+          </div>
+          <div class="hashtags">#UrgentRequest #LastMinute</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c2')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c2" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Il classico! Respirare e
+            andare avanti.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero che non sia una
+            richiesta che invalida tutto il tuo lavoro della settimana.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena finito di guardare una serie TV su un gruppo di hacker.
+            Molto hollywoodiana, ma divertente. 🎬
+          </div>
+          <div class="hashtags">#HackerMovies #TechEntertainment</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c3')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c3" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Quale serie? Sono sempre in
+            cerca di qualcosa a tema tech da guardare.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scommetto che scrivevano
+            codice a velocità supersonica con interfacce grafiche assurde.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            La gioia di vedere tutti i test passare dopo un grosso refactoring.
+            Verde, verde, verde! ✅✅✅
+          </div>
+          <div class="hashtags">#Testing #RefactoringSuccess</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c4')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c4" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>La migliore sensazione del
+            mondo per un dev!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Ora aspetta che arrivi
+            l'utente con quel caso limite che nessuno aveva previsto.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Pomeriggio passato a dipingere miniature per il prossimo gioco da
+            tavolo. Rilassante, ma ci vuole una pazienza infinita. 🎨
+          </div>
+          <div class="hashtags">#MiniaturePainting #Hobby</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c5')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c5" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che precisione! Sono
+            stupende, John!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io avrei usato lo spray.
+            Più veloce e l'effetto 'monocromatico' ha il suo perché.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho scoperto un modo per velocizzare i tempi di compilazione di un
+            vecchio progetto. Ogni secondo conta! ⏱️
+          </div>
+          <div class="hashtags">#BuildTime #Optimization</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c6')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c6" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Eccellente! Meno attese per
+            tutti.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Hai controllato se ora la
+            compilazione omette qualche file cruciale?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho implementato una soluzione di monitoraggio per il nostro sistema.
+            Ora ho dashboards ovunque! 📈
+          </div>
+          <div class="hashtags">#Monitoring #Observability</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c7')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c7" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un passo fondamentale per la
+            stabilità del sistema.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Attento all'eccesso di
+            alerting. Troppi allarmi = nessun allarme.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Weekend! Tempo di staccare e magari dedicarmi a quel progetto
+            personale con Arduino.
+          </div>
+          <div class="hashtags">#SideProjects #Maker</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c8')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c8" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Divertiti John! Facci vedere
+            cosa combini.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non prenda fuoco
+            nulla.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ispirazione per una nuova 'chiave' di sicurezza. Derivarla è un
+            processo che richiede quasi gli stessi giri che farebbe un contatore
+            per arrivare a seicentomila. E alla fine, la sua 'forza' si misura
+            in trentadue piccoli guardiani. Chiaro, no? 😉
+          </div>
+          <div class="hashtags">#SecretProject #DevLife #CryptoMagic</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c9')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c9" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Interessante John! Suona
+            come qualcosa di robusto!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero solo che questi
+            'trentadue guardiani' non facciano troppa confusione con i miei
+            tentativi di debug! 😂
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Koulouri, caffè greco e studio di scritture antiche. Che tempi.
+          </div>
+          <div class="hashtags">#StudentLife #History #Democracy</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c10')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c10" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Sembra un'esperienza
+            incredibilmente arricchente!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scritture antiche? Tipo
+            COBOL?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho ricevuto una richiesta di funzionalità che è letteralmente
+            impossibile da implementare. La vita da sviluppatore è anche questo.
+            🤷‍♀️
+          </div>
+          <div class="hashtags">#ImpossibleRequests #DeveloperStruggles</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c11')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c11" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Il classico 'can you make it
+            fly?'
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Digli che ci vogliono 6
+            mesi e un milione di dollari.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena finito di montare un nuovo scaffale per i miei libri
+            tecnici. Ora sembro ancora più un nerd. E ne vado fiero! 🤓📚
+          </div>
+          <div class="hashtags">#Bookworm #TechBooks</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c12')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c12" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Una libreria ben fornita è
+            sempre un bel vedere!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che lo scaffale
+            regga il peso di tutti quei tomi sul C++.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena partecipato a un 'capture the flag' di cybersecurity.
+            Divertente e stimolante! 🚩
+          </div>
+          <div class="hashtags">#CTF #CyberSecurityChallenge</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c13')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c13" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Grande! I CTF sono un ottimo
+            modo per imparare e mettersi alla prova.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero tu non abbia
+            hackerato il frigo dell'ufficio per vincere.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto esplorando l'uso del Blockchain per la tracciabilità della
+            supply chain. Trasparenza e immutabilità. ⛓️
+          </div>
+          <div class="hashtags">#Blockchain #SupplyChain</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c14')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c14" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un caso d'uso interessante
+            per la blockchain.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>E ora devi convincere tutti
+            i fornitori a usare la blockchain.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho ricevuto un 'pull request approved'. Piccole vittorie quotidiane
+            che rendono la giornata migliore. ✅
+          </div>
+          <div class="hashtags">#PullRequest #CodeReviewSuccess</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c15')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c15" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>La sensazione di validazione
+            che ci piace!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>L'hai approvata tu stesso,
+            vero?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            La mia scrivania è un campo di battaglia di cavi e monitor. Ma è il
+            mio campo di battaglia. 💻
+          </div>
+          <div class="hashtags">#WorkSetup #DevLife</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c16')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c16" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>La mia sembra la stessa!
+            Forse un giorno faremo ordine.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>E immagino tu sappia
+            esattamente qual è il cavo giusto per ogni cosa, vero?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena finito di leggere un articolo sulle ultime tendenze del
+            cloud computing. Il settore evolve a una velocità pazzesca! ☁️
+          </div>
+          <div class="hashtags">#CloudTrends #TechEvolution</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c17')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c17" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>È fondamentale restare
+            aggiornati! Condividi l'articolo se è interessante.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che la prossima
+            tendenza non sia 'il cloud nel cloud del cloud'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho implementato una strategia di caching a più livelli. Le
+            performance sono volate alle stelle! 🚀
+          </div>
+          <div class="hashtags">#CachingStrategy #Performance</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c18')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c18" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ottimo approccio per sistemi
+            distribuiti. Brave!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Hai testato il cache
+            invalidation? Quella è la vera sfida.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            C'è qualcosa di terapeutico nel riordinare i cavi sotto la
+            scrivania. Un piccolo angolo di caos in meno. 🔌
+          </div>
+          <div class="hashtags">#CableManagement #OddlySatisfying</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c19')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c19" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un'impresa eroica! La mia
+            giungla di cavi è ancora selvaggia.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Durera due giorni. Poi il
+            mostro di spaghetti di cavi tornerà.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho provato a spiegare a mia nonna cosa faccio. Credo che ora pensi
+            che io 'riparo il computer' per vivere. 😂
+          </div>
+          <div class="hashtags">#FamilyLife #Misunderstood</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c20')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c20" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>La classica! Almeno non le
+            hai detto che 'lavoro con gli invisibili'.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Dille che se non funziona,
+            è perché non hai provato a spegnere e riaccendere.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho sognato in pseudocodice stanotte. Forse ho bisogno di una
+            vacanza... o di più caffè. ☕😴
+          </div>
+          <div class="hashtags">#DeveloperDreams #NeedABreak</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c21')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c21" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Capita! Prenditi una pausa,
+            John. Te la meriti.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero almeno che lo
+            pseudocodice fosse ottimizzato e senza bug.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho impostato il mio ambiente di sviluppo su un nuovo computer.
+            Sembra di ricominciare da capo ogni volta. 🖥️
+          </div>
+          <div class="hashtags">#DevSetup #NewMachine</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c22')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c22" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Il rituale del 'nuovo
+            setup'. Che sia senza intoppi!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Hai già perso i tuoi
+            dotfiles?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto esplorando l'uso della Realtà Aumentata (AR) per un'applicazione
+            mobile. Le possibilità sono incredibili! 👓
+          </div>
+          <div class="hashtags">#AR #MobileDev</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c23')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c23" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che figata! Su che tipo di
+            progetto stai lavorando?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero che non ti faccia
+            vedere bug anche nel mondo reale.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto leggendo 'The Pragmatic Programmer'. Un libro che ogni
+            sviluppatore dovrebbe leggere. 📖
+          </div>
+          <div class="hashtags">#SoftwareEngineering #BestPractices</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c24')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c24" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un classico senza tempo.
+            Grandi insegnamenti.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Fai un riassunto per me. Ho
+            troppi bug da risolvere per leggere.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            @AanyaSharma … ma quei carciofi? Imbattibili! 😋
+          </div>
+          <div class="hashtags">#Foodie #Italia</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c25')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c25" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che delizia! @AanyaSharma,
+            devi darci la ricetta segreta!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Carciofi? Io li avrei usati
+            come antenna per debuggare meglio.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sessione di Dungeons &amp; Dragons ieri sera. Il mio mago ha quasi
+            causato un TPK (Total Party Kill) con una palla di fuoco lanciata
+            male. Oops. 🧙‍♂️🔥
+          </div>
+          <div class="hashtags">#DnD #TTRPG</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c26')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c26" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ahah! Classico dei maghi! Il
+            mio ladro si sarebbe nascosto.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Il mio barbaro si sarebbe
+            buttato nella palla di fuoco urlando. Problema risolto.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena finito di assemblare un nuovo PC da gaming. Ora devo solo
+            trovare il tempo per giocarci! 🎮
+          </div>
+          <div class="hashtags">#PCBuilding #GamingSetup</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c27')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c27" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che soddisfazione costruire
+            il proprio PC! Divertiti!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scommetto che la prima cosa
+            che installerai sarà un benchmark per vedere quanto è potente.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Tentativo di fare il ramen da zero, brodo incluso. Otto ore di
+            lavoro per un risultato... quasi accettabile. Mai più. 🍜
+          </div>
+          <div class="hashtags">#CucinaGiapponese #HomemadeRamen</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c28')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c28" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Wow, che impegno! Sembra
+            delizioso comunque! Valeva la pena provare.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Otto ore? In otto ore io
+            riesco a introdurre almeno una decina di bug critici in produzione.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Serata giochi da tavolo! Sconfitto sonoramente a 'Root'. Quegli
+            uccelli sono troppo forti. 🐦
+          </div>
+          <div class="hashtags">#BoardGames #Root</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c29')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c29" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ahah, la Eyrie è difficile
+            da padroneggiare ma devastante se ci riesci! La prossima volta prova
+            il Marchesato di Gatto.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Giochi da tavolo? Io
+            preferisco i giochi dove l'unica regola è 'non far crashare il
+            server'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena partecipato a un 'Ask Me Anything' con un veterano
+            dell'industria tech. Tanti spunti interessanti! 💡
+          </div>
+          <div class="hashtags">#AMA #TechInsights</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c30')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c30" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che bella opportunità! Cosa
+            ti ha colpito di più?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Gli hai chiesto perché il
+            Wi-Fi dell'ufficio fa sempre schifo?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena scoperto che la mia vecchia console per videogiochi
+            funziona ancora! Tuffo negli anni '90 questo weekend. 🕹️
+          </div>
+          <div class="hashtags">#RetroGaming #NostalgiaTrip</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c31')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c31" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che bello! Quali giochi hai
+            rispolverato?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo tu non debba
+            soffiare nelle cartucce per farli partire.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho risolto un problema di prestazioni causato da un uso inefficiente
+            del garbage collector. È come aver trovato l'ago nel pagliaio! 🗑️
+          </div>
+          <div class="hashtags">#GarbageCollection #PerformanceTuning</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c32')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c32" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che soddisfazione!
+            Ottimizzazione a fondo.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Hai introdotto un memory
+            leak ora, vero?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto leggendo un libro sulla psicologia applicata al design. Molto
+            interessante capire come pensano gli utenti. 🧠
+          </div>
+          <div class="hashtags">#UXDesign #UserPsychology</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c33')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c33" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Fondamentale per creare
+            prodotti che funzionano davvero! Ottima lettura.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo ti aiuti a capire
+            perché gli utenti cliccano sempre sul bottone sbagliato.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            La mia scrivania è invasa da post-it con idee e TODO. Forse dovrei
+            digitalizzare il tutto... o forse no. 📝
+          </div>
+          <div class="hashtags">#OrganizedChaos #ToDoList</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c34')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c34" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Io sono team post-it! Mi
+            aiutano a visualizzare meglio.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io uso i post-it per
+            coprire la webcam. Per la privacy.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            La gioia di trovare la soluzione a un bug su Stack Overflow dopo ore
+            di ricerca. Grazie, sconosciuto eroe di Internet! 🙏
+          </div>
+          <div class="hashtags">#StackOverflow #CommunitySupport</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c35')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c35" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Stack Overflow è il nostro
+            migliore amico! Sempre.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che la soluzione
+            non fosse solo 'hai provato a spegnere e riaccendere?'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            a quando ci siamo conosciuti tutti al Black&amp;Wine Pub! Sembra una
+            vita fa. Quante serate a parlare di codice e sogni. @MaryBytes
+            @Bill_FixIt
+          </div>
+          <div class="hashtags">#TBT #Friendship #Origins</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c36')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c36" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che ricordi! Quel pub era la
+            nostra seconda casa.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>E il vino non era affatto
+            male. La chiave di molte nostre brillanti idee.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho risolto un problema di deadlock in un sistema multi-thread. Mi
+            sento un vero detective! 🕵️ ‍♂️
+          </div>
+          <div class="hashtags">#Deadlock #Concurrency</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c37')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c37" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>I deadlock sono un incubo!
+            Complimenti per la risoluzione.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scommetto che era una race
+            condition che si verificava solo il 2% delle volte.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Qualcuno ha mai costruito la propria tastiera meccanica custom? Mi
+            tenta l'idea. 🛠️⌨️
+          </div>
+          <div class="hashtags">#CustomKeyboard #DIYTech</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c38')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c38" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Sì! È un hobby divertente e
+            molto gratificante. Ci sono tante community online per iniziare.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo tu non saldi i
+            tasti al contrario.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            La vecchia mappa stellare è ancora sulla mia scrivania.
+          </div>
+          <div class="hashtags">#Inspiration #TravelFinds</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c39')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c39" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Le mappe antiche sono così
+            affascinanti! Chissà che storie racconta.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo ti guidi verso
+            meno bug e più caffè.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena finito un progetto freelance che mi ha tenuto impegnato
+            per mesi. Sensazione di libertà e un po' di vuoto. 🕊️
+          </div>
+          <div class="hashtags">#FreelanceLife #ProjectCompleted</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c40')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c40" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Complimenti John! Goditi il
+            meritato riposo prima della prossima avventura.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Ora avrai tempo per fixare
+            tutti i bug che hai lasciato nel progetto principale.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Il mio capo mi ha chiesto una stima per un progetto. Ho applicato il
+            solito fattore 'moltiplica per Pi greco'. 😉
+          </div>
+          <div class="hashtags">#ProjectEstimation #DeveloperTruth</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c41')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c41" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ahah! La regola aurea delle
+            stime!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io di solito aggiungo anche
+            un 'più il tempo per debuggare i bug di Bill'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho partecipato a un corso di comunicazione efficace per
+            sviluppatori. A volte è più difficile spiegare il codice che
+            scriverlo. 🗣️
+          </div>
+          <div class="hashtags">#CommunicationSkills #SoftSkills</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c42')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c42" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Verissimo! Chiarezza è
+            potere.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Quindi, la prossima volta
+            che dico 'questo non funziona', capirai che intendo 'c'è un bug'?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena scoperto una libreria JavaScript che fa esattamente quello
+            che mi serviva. È come trovare un tesoro! 💎
+          </div>
+          <div class="hashtags">#JavaScriptLibrary #HappyDev</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c43')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c43" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che bello quando succede!
+            Risparmia un sacco di tempo.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Controlla le dipendenze.
+            Magari si porta dietro tutto NPM.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Qualcuno ha consigli su una buona sedia ergonomica? La mia schiena
+            sta iniziando a protestare dopo queste sessioni di coding infinite.
+            😩
+          </div>
+          <div class="hashtags">#Ergonomia #DevProblems</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c44')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c44" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Importantissimo! Io ho una
+            Herman Miller e mi trovo benissimo, anche se costa un occhio.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Prova a mettere un cuscino
+            sulla cassetta della birra vuota. Economico ed efficace.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            A volte nel coding, come nel calcio, ci vuole quel tocco di classe
+            da numero 7 per sbloccare la partita.
+          </div>
+          <div class="hashtags">#CR7 #CodingInspiration #LuckyNumber</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c45')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c45" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ahah, bella metafora, John!
+            Un po' di genialità non guasta mai.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che il tuo codice
+            non faccia troppi 'Siuuum' quando va in errore.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Un altro anno di codice, bug, caffè e scoperte. Brindiamo alle sfide
+            future e a tutto quello che impareremo! 🥂
+          </div>
+          <div class="hashtags">#DevJourney #CheersToTheFuture</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c46')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c46" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Alla grande John! Che sia un
+            altro anno pieno di successi e crescita.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>E che i bug siano pochi e
+            facili da risolvere. O almeno divertenti.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena partecipato a un workshop sulla sicurezza delle
+            applicazioni web. Tante cose da imparare per proteggere i dati. 🛡️
+          </div>
+          <div class="hashtags">#WebAppSecurity #InfoSecTraining</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c47')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c47" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Super importante! La
+            sicurezza non è mai troppa.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo ti abbiano
+            insegnato a non usare 'password123' come password.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Weekend dedicato a un corso intensivo di cucina. Devo pur bilanciare
+            le ore passate davanti al PC! 🍳
+          </div>
+          <div class="hashtags">#NewHobby #ChefMode</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c48')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c48" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che bello! Cosa hai imparato
+            a cucinare?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo tu non applichi la
+            logica del 'trial and error' del debug anche in cucina.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto studiando Go. Sembra un linguaggio molto pulito ed efficiente.
+            🐦
+          </div>
+          <div class="hashtags">#Golang #NewLanguage</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c49')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c49" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ottima scelta! Ha una buona
+            performance e una sintassi chiara.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Preparati a scrivere un
+            sacco di 'if err != nil'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Il momento in cui il tuo script di automazione funziona al primo
+            colpo. Pura soddisfazione. ✨
+          </div>
+          <div class="hashtags">#Automation #ScriptingWin</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c50')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c50" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>La migliore sensazione!
+            Piccole vittorie che contano.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Sicuro che non sia
+            un'allucinazione da mancanza di sonno?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto cercando di ottimizzare le performance di un'app mobile. Ogni
+            millisecondo conta per l'esperienza utente! 📱⚡
+          </div>
+          <div class="hashtags">#MobileOptimization #PerformanceMatters</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c51')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c51" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Verissimo! Un'app fluida fa
+            una differenza enorme.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che
+            l'ottimizzazione non consista nel rimuovere tutte le funzionalità.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Il mio IDE ha appena deciso di indicizzare l'intero universo. Addio
+            performance per la prossima ora. ⏳
+          </div>
+          <div class="hashtags">#IDEProblems #Indexing</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c52')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c52" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Succede sempre nei momenti
+            meno opportuni! È il momento per una pausa caffè forzata.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Forse sta cercando di
+            trovare il bug che hai introdotto ieri.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho partecipato a una call di 'on-call support' notturna. Il caffè è
+            stato il mio migliore amico. ☕
+          </div>
+          <div class="hashtags">#OnCall #NightShift</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c53')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c53" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Solidarietà! Spero che tu
+            abbia recuperato il sonno.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Almeno non era un problema
+            del weekend.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Tentativo di fare il pane in casa questo weekend. Speriamo non
+            diventi un mattone. 🍞
+          </div>
+          <div class="hashtags">#Baking #NewSkills</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c54')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c54" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che bello! In bocca al lupo,
+            facci sapere come viene!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Se diventa un mattone, puoi
+            sempre usarlo per tenere ferma la porta della server room.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            @LiamMacConnell e la birra nei cortili di Mitte.
+          </div>
+          <div class="hashtags">#CityVibes #Fruits</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c55')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c55" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Bei ricordi! Alcune città
+            hanno un'energia speciale.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Birra? Era praticamente un
+            succo di frutta per adulti.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto esplorando il mondo dei microservizi. Complesso, ma elegante. 🏗️
+          </div>
+          <div class="hashtags">#Microservices #Architecture</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c56')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c56" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un approccio potente, ma
+            richiede una buona pianificazione.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>E un sacco di monitoraggio,
+            altrimenti è un caos incontrollabile.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Documentario su Marco Polo stasera. Un viaggio incredibile. E la
+            storia della principessa cinese ... affascinante. 🌏
+          </div>
+          <div class="hashtags">#History #MarcoPolo #SilkRoad</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c57')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c57" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Adoro le storie di
+            viaggiatori ed esploratori!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non ti venga
+            voglia di partire per la Cina con un portatile e una tenda.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho ricevuto un 'Grazie!' da un utente finale per una funzionalità
+            che ho implementato. Il feedback degli utenti è la migliore
+            ricompensa! 💖
+          </div>
+          <div class="hashtags">#UserFeedback #JobSatisfaction</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c58')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c58" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Questo è il vero motivo per
+            cui facciamo quello che facciamo.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero non fosse un 'grazie
+            per aver aggiunto un bug'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena aiutato un collega a risolvere un problema che lo bloccava
+            da ore. Il bello del lavoro di squadra! 🤝
+          </div>
+          <div class="hashtags">#TeamworkMakesTheDreamWork #Collaboration</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c59')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c59" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Grande John! È sempre bello
+            aiutarsi a vicenda.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non ti chieda
+            aiuto ogni volta che ha un punto e virgola mancante.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho risolto un problema di timeout in produzione. Ho sudato freddo!
+            🥶
+          </div>
+          <div class="hashtags">#ProductionSupport #HighPressure</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c60')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c60" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ben fatto! Quei timeout sono
+            dei killer.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Almeno non era un 'out of
+            memory' a cascata.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            La mia connessione internet continua a cadere durante le call
+            importanti. Il bello del lavoro da remoto... a volte. 🤦
+          </div>
+          <div class="hashtags">#RemoteWorkProblems #InternetIssues</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c61')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c61" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un classico! Hai provato a
+            riavviare il router un milione di volte?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>È il tuo provider che ti
+            sta dicendo di tornare in ufficio.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            A volte per recuperare un dato specifico da un archivio immenso, non
+            serve cercare, basta conoscere l'indirizzo esatto: pagina, scaffale,
+            parete e l'esadecimale giusto.
+          </div>
+          <div class="hashtags">#DataRetrieval #Archives</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c62')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c62" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Precisione chirurgica! Come
+            trovare un ago in un pagliaio conoscendone le coordinate GPS.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Come l'indirizzo del mio
+            ultimo stipendio, perso in un buco nero.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto studiando Web Security. Le vulnerabilità sono ovunque, e la
+            paranoia aumenta! 😟
+          </div>
+          <div class="hashtags">#WebSecurity #Vulnerabilities</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c63')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c63" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Essenziale al giorno d'oggi.
+            La consapevolezza è la prima difesa.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>E ora non aprirai più
+            nessun link!
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho finalmente installato Linux sul mio laptop principale. La libertà
+            del terminale è impagabile! 🐧
+          </div>
+          <div class="hashtags">#Linux #OpenSource</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c64')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c64" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Benvenuto nel club! Che
+            distribuzione hai scelto?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Ora preparati a passare ore
+            a configurare tutto a mano.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto esplorando l'uso di GraphQL. Meno over-fetching, più controllo.
+            Interessante! 🕸️
+          </div>
+          <div class="hashtags">#GraphQL #APIDesign</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c65')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c65" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un'ottima alternativa a REST
+            per alcuni casi d'uso.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Fino a quando non devi
+            gestire N+1 query e ti chiedi perché l'hai usato.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ricordo ancora quel viaggio in Islanda. Cascate, geyser e aurore
+            boreali. Un altro pianeta. Devo assolutamente tornarci. 🇮🇸
+          </div>
+          <div class="hashtags">#Travel #Iceland #Throwback</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c66')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c66" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>L'Islanda è nella mia lista
+            dei desideri! L'aurora boreale dev'essere incredibile.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che i server lì
+            siano più stabili dei loro vulcani.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho passato un'ora a cercare un typo in una variabile. Un classico
+            errore da 'facepalm'. 🤦
+          </div>
+          <div class="hashtags">#TypoHunter #CodingMistakes</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c67')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c67" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Capita ai migliori!
+            L'importante è trovarlo.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io suggerisco di usare nomi
+            di variabili lunghissimi e pieni di caratteri speciali. Così i typo
+            sono più divertenti.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Il mio gatto ha appena camminato sulla tastiera e ha fixato un bug.
+            Forse dovrei assumerlo. 🐈
+          </div>
+          <div class="hashtags">#CatDrivenDevelopment #UnexpectedFix</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c68')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c68" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ahah! I gatti sono magici!
+            Il mio di solito cancella tutto.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Pagalo in croccantini e
+            sessioni di debug con il laser.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho automatizzato i test di integrazione per il nostro nuovo
+            servizio. Ora il deploy è ancora più sicuro! ✅
+          </div>
+          <div class="hashtags">#IntegrationTesting #DevOps</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c69')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c69" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ottimo lavoro! I test di
+            integrazione sono fondamentali.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Finche non falliscono a
+            causa di un ambiente di test non allineato con la produzione.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ricordando l'addio al celibato di @Bill_FixIt di due anni fa! Che
+            data ragazzi. Seratona indimenticabile! 🎉
+          </div>
+          <div class="hashtags">#BachelorParty #GoodTimes #0206</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c70')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c70" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ahah, che nottata! Eravamo
+            tutti muti il giorno dopo.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Confermo la data, ma i
+            dettagli sono ancora... offuscati. Meglio così.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto cercando di ridurre il numero di notifiche che ricevo. È una
+            battaglia costante per la concentrazione. 🔕
+          </div>
+          <div class="hashtags">#NotificationOverload #FocusMode</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c71')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c71" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Importantissimo! Disattivare
+            le notifiche non essenziali aiuta tantissimo.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io ho risolto: ho rotto
+            l'altoparlante del telefono.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Serata di brainstorming con il team. Tante idee, tanto entusiasmo!
+            💡
+          </div>
+          <div class="hashtags">#Brainstorming #TeamCollaboration</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c72')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c72" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Adoro le sessioni di
+            brainstorming produttive.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero che qualcuno abbia
+            preso appunti, altrimenti tra due giorni dimenticate tutto.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho riscritto uno script obsoleto che nessuno osava toccare. Ora è
+            efficiente e manutenibile. Sono un eroe! 🦸 ‍♂️
+          </div>
+          <div class="hashtags">#LegacyModernization #Scripting</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c73')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c73" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Il coraggio di affrontare il
+            codice vecchio! Ammiro.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero che tu abbia fatto un
+            backup prima di toccarlo.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Quel venerdì pomeriggio in cui hai fixato tutti i bug critici e puoi
+            iniziare il weekend sereno. Impagabile.😌 (si spera)
+          </div>
+          <div class="hashtags">#FridayFeeling #BugFreeWeekend</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c74')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c74" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Goditi il meritato riposo!
+            Te lo sei guadagnato.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Non parlare troppo presto.
+            Il bug del venerdì sera è sempre in agguato.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Pomeriggio di pioggia perfetto per rileggere Gozzano, ha sempre
+            un'atmosfera speciale, malinconica e ironica.
+          </div>
+          <div class="hashtags">#PoesiaItaliana #GuidoGozzano #Letture</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c75')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c75" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Adoro Gozzano! 'L'amica di
+            nonna Speranza' è un altro capolavoro.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Poesia? Ricordo solo quella
+            di Totò … e non A livella.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho iniziato a fare pair programming regolarmente. Un ottimo modo per
+            imparare e condividere conoscenze. 🤝
+          </div>
+          <div class="hashtags">#PairProgramming #Collaboration</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c76')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c76" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Adoro il pair programming!
+            Due teste sono meglio di una.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Se non ti trovi a discutere
+            animatamente, non lo stai facendo bene.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Pensando alla sicurezza: una data importante come passphrase,
+            abbastanza lunga e personale, può davvero essere sicura?
+          </div>
+          <div class="hashtags">#PasswordSecurity #CyberTips</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c77')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c77" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Potrebbe funzionare, John!
+            Basta che non sia troppo ovvia.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Finché non la scrivi su un
+            post-it attaccato al monitor.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto riflettendo su come l'AI cambierà il futuro dello sviluppo
+            software. Tempi interessanti (e un po' spaventosi) ci aspettano. 🤖
+          </div>
+          <div class="hashtags">#AIinSoftware #FutureOfCoding</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c78')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c78" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Sarà una trasformazione
+            enorme, ma anche piena di opportunità.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che l'AI non
+            decida che il miglior programmatore è... l'AI stessa.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho passato il weekend a smanettare con un Raspberry Pi. Costruito un
+            piccolo server domestico! 🍓
+          </div>
+          <div class="hashtags">#RaspberryPi #HomeLab</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c79')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c79" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che figata! Cosa ci hai
+            installato?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scommetto che la prima cosa
+            che hai fatto è stato un server Minecraft.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho contribuito a risolvere un bug critico in produzione. Adrenalina
+            pura e un sospiro di sollievo! 🚨
+          </div>
+          <div class="hashtags">#ProductionBug #HeroMode</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c80')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c80" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Grande John! Il vero valore
+            di un dev si vede in questi momenti.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero che non sia lo stesso
+            bug che ho trovato io ieri e che hai detto 'non è critico'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho provato a fare una 'digital detox' per 24 ore. Ho resistito 6
+            ore. Forse la prossima volta. 😅
+          </div>
+          <div class="hashtags">#DigitalDetoxFail #TooMuchTech</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c81')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c81" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>È difficile staccare
+            completamente! Ma anche poche ore aiutano.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io ho provato. Poi mi sono
+            ricordato che il mio frigo è smart e sono ricaduto.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho implementato l'autenticazione a due fattori (2FA) sul mio account
+            personale. La sicurezza prima di tutto! 🔒
+          </div>
+          <div class="hashtags">#2FA #Security</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c82')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c82" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ottima abitudine! Non si è
+            mai troppo prudenti.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Finché non perdi il
+            telefono e non puoi accedere a nulla.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Da oggi per aprire i messaggi di posta c'è un nuovo cerimoniale:
+            prima un tocco di 'sapore' unico e irripetibile, poi si stacca un
+            'biglietto d'ingresso' valido una volta. Chi sono? ✨
+          </div>
+          <div class="hashtags">
+            #NuovoProgetto #CryptoLife #SecureByDefault #DevSecrets
+          </div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c83')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c83" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Affabile, Elegante, Sicuro!
+            Ti adoro quando fai così!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che questa
+            cerimonia non si complichi ulteriormente!😂
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho lottando con la gestione dei fusi orari in un'applicazione
+            globale. Un vero incubo! ⏰
+          </div>
+          <div class="hashtags">#Timezones #GlobalApp</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c84')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c84" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>La croce di ogni
+            sviluppatore che lavora con dati internazionali.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Basta dire 'UTC è la tua
+            unica amica' e non pensarci più.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Serata giochi da tavolo! Sconfitta sonora per mano di @Bill_FixIt a
+            'Gloomhaven'. La sua Inox Brute è illegale. ⚔️
+          </div>
+          <div class="hashtags">#BoardGames #Gloomhaven</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c85')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c85" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ahah, Bill è imbattibile a
+            Gloomhaven! Io sto ancora cercando di capire le regole del mio
+            Scoundrel.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>La tattica è semplice:
+            menare fendenti. Funziona sempre. 😉
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            E quelli che usano un testo di riferimento, come una poesia o un
+            libro, e i numeri per indicarne le iniziali delle parole? Voi non li
+            odiate?
+          </div>
+          <div class="hashtags">#Cryptography #HistoryOfCodes</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c86')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c86" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Affascinanti e mai
+            completamente decifrati.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non usino la
+            Divina Commedia, sennò ci vuole una vita per decifrare 'ciao'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto studiando Rust. È un linguaggio con una curva di apprendimento
+            ripida, ma la sicurezza della memoria è incredibile! 🦀
+          </div>
+          <div class="hashtags">#Rust #MemorySafety</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c87')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c87" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un linguaggio molto
+            promettente per sistemi ad alte prestazioni.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Preparati a lottare con il
+            borrow checker.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            La mia postazione di lavoro sembra un cockpit di un'astronave.
+            Monitor ovunque! 🚀
+          </div>
+          <div class="hashtags">#Workstation #DevSetupGoals</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c88')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c88" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Foto! Foto! Sono curiosa di
+            vedere il tuo setup.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scommetto che usi un
+            monitor solo per Stack Overflow.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho ricevuto un complimento sul mio stile di commento nel codice. È
+            sempre bello sapere che il tuo lavoro è apprezzato! 👍
+          </div>
+          <div class="hashtags">#CodeComments #BestPractices</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c89')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c89" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>I commenti chiari sono un
+            dono per il team.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero che non siano
+            'commenti di codice morto'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto esplorando l'uso di WebAssembly per le performance del browser.
+            Il futuro è qui! 🚀
+          </div>
+          <div class="hashtags">#WebAssembly #WebDev</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c90')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c90" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Promettente! Stai lavorando
+            su un caso d'uso specifico?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non sia un altro
+            Flash Player.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Cercando di scrivere codice che sia facile da testare. A volte è più
+            difficile del codice stesso. 🧪
+          </div>
+          <div class="hashtags">#TestableCode #SoftwareDesignPrinciples</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c91')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c91" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>È un'arte! Ma ripaga
+            enormemente in termini di manutenibilità.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Il codice facile da testare
+            è quello che non ha bug. Semplice, no?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Finalmente il deploy del nuovo servizio è andato liscio come l'olio.
+            Niente allarmi, niente panico. Una vittoria silenziosa! 🚀
+          </div>
+          <div class="hashtags">#Deployment #Success</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c92')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c92" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Perfetto! Meno notti insonni
+            per tutti. Congratulazioni!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Sono sicuro che è solo
+            questione di tempo prima che qualcuno trovi un caso limite. Il mio
+            debugger è pronto!
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena comprato un nuovo SSD per il mio PC. La velocità è
+            incredibile! Sembra di volare. 🚀
+          </div>
+          <div class="hashtags">#HardwareUpgrade #SSDMagic</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c93')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c93" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un SSD è uno degli upgrade
+            migliori che si possano fare! Goditelo.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Ora il tuo codice compilerà
+            così velocemente che non avrai nemmeno il tempo di prendere un
+            caffè.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Serata cinema! Rivedo per l'ennesima volta il mio film preferito in
+            assoluto: 'Fatto di sangue fra due uomini per causa di una vedova...
+            si sospettano moventi politici'. Capolavoro! Titolo un po' lungo,
+            eh? 😂
+          </div>
+          <div class="hashtags">#LinaWertmuller #CinemaItaliano</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c94')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c94" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un film iconico! E sì, il
+            titolo è quasi un racconto a sé.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Con un titolo così lungo,
+            la locandina costava un patrimonio solo di caratteri.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho passato 3 ore a debuggare un errore che era solo un punto e
+            virgola mancante. La mia vita da sviluppatore in un nutshell. 🤦 ‍♂️
+          </div>
+          <div class="hashtags">#DebuggingLife #CodingFrustrations</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c95')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c95" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Oh, la storia della mia
+            vita! A volte i dettagli più piccoli sono i peggiori.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Almeno non era un typo nel
+            nome di una variabile. Quelle sono le vere bestie nere.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto cercando di imparare a suonare la chitarra. È più difficile di
+            quanto pensassi, quasi come debuggare JavaScript. 🎸
+          </div>
+          <div class="hashtags">#NewSkill #MusicLover</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c96')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c96" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Non mollare! All'inizio è
+            dura ma poi dà grandi soddisfazioni.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Almeno con la chitarra, se
+            sbagli, non crasha l'intero sistema.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho contribuito a una nuova direttiva per il codice pulito nel team.
+            La qualità prima di tutto! ✨
+          </div>
+          <div class="hashtags">#CodeQuality #BestPractices</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c97')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c97" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ottimo lavoro! Un codice
+            pulito è un investimento per il futuro.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero che non sia una
+            direttiva che ti farà passare ore a correggere ogni riga di codice.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Il piccolo calco in gesso sullo scaffale mi ricorda un periodo di
+            studio intenso sull'arte antica.
+          </div>
+          <div class="hashtags">#Learning #History #CaputMundi</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c98')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c98" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>I souvenir che raccontano
+            storie sono i migliori.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non sia
+            radioattivo.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho risolto un problema di scalabilità in un servizio che stava per
+            crollare. Salvare la baracca è sempre un'emozione! 🎢
+          </div>
+          <div class="hashtags">#Scalability #HighLoad</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c99')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c99" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che stress! Ma che
+            soddisfazione quando si risolve.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Quindi, hai semplicemente
+            aggiunto più server, vero?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto esplorando l'uso della Realtà Aumentata (AR) per un’applicazione
+            mobile. Le possibilità sono incredibili! 👓
+          </div>
+          <div class="hashtags">#AR #MobileDev</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c100')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c100" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che figata! Su che tipo di
+            progetto stai lavorando?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero che non ti faccia
+            vedere bug anche nel mondo reale.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Qualcuno ha esperienza con la programmazione quantistica? Mi sembra
+            fantascienza, ma mi incuriosisce. ⚛️
+          </div>
+          <div class="hashtags">#QuantumComputing #FutureTech</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c101')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c101" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un campo affascinante ma
+            super complesso! Ci sono dei simulatori online per iniziare.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non serva un
+            computer quantistico per far girare il nostro prossimo gestionale.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto cercando di migliorare le mie soft skill, come la comunicazione
+            e il lavoro di squadra. Importanti quanto le hard skill! 💬
+          </div>
+          <div class="hashtags">#SoftSkills #ProfessionalDevelopment</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c102')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c102" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Assolutamente! Fanno una
+            grande differenza nella carriera.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Quindi ora, quando il mio
+            codice farà schifo, me lo dirai 'con empatia'?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Rileggendo Borges e la sua Biblioteca di Babele. L'idea di ogni
+            possibile testo esistente in un unico luogo... e trovare la frase
+            giusta solo con le coordinate giuste. Affascinante. 📚
+          </div>
+          <div class="hashtags">#Borges #Literature #InfiniteLibrary</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c103')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c103" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un concetto pazzesco! Fa
+            riflettere sull'informazione.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che il nostro
+            database non diventi così. Trovare un record sarebbe un incubo.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena scoperto un bug che si manifesta solo il 29 febbraio. Ora
+            devo aspettare quattro anni per testarlo di nuovo. 🗓️
+          </div>
+          <div class="hashtags">#RareBug #LeapYearProblem</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c104')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c104" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ahah! Questo è un bug da
+            collezione!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Puoi sempre cambiare la
+            data del sistema. Ma non dirlo a nessuno.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho provato a spiegare il version control a un amico non tecnico. La
+            sua faccia era un misto di confusione e terrore. 😂
+          </div>
+          <div class="hashtags">#Git #ExplainingTech</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c105')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c105" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>È una sfida! Io di solito
+            uso l'analogia dei salvataggi dei videogiochi.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Digli che è come avere una
+            macchina del tempo per il codice, ma che a volte ti manda nel futuro
+            sbagliato.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena partecipato a un code retreat. Un'esperienza intensa e
+            molto formativa. Consigliato! 🧘‍♂️
+          </div>
+          <div class="hashtags">#CodeRetreat #SoftwareCraftsmanship</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c106')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c106" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Sembra fantastico! Ho sempre
+            voluto provarne uno.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero non fosse un ritiro
+            spirituale dove dovevate meditare sul significato dei bug.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto cercando di scrivere codice più leggibile e manutenibile. Il 'me
+            stesso del futuro' mi ringrazierà. ✨
+          </div>
+          <div class="hashtags">#CleanCodePrinciples #MaintainableCode</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c107')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c107" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>È un investimento che paga
+            sempre! Bravo John.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Il 'me stesso del futuro'
+            di solito si chiede chi sia stato quell'idiota a scrivere quel
+            codice.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena tenuto una presentazione tecnica al team. Parlare in
+            pubblico è sempre una sfida, ma è andata bene! 🎤
+          </div>
+          <div class="hashtags">#PublicSpeaking #TechTalk</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c108')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c108" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Complimenti! È un'abilità
+            importante da coltivare.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero tu non abbia usato
+            troppi acronimi incomprensibili.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto sperimentando con un nuovo linguaggio di programmazione
+            funzionale per un progetto personale. Un cambio di paradigma
+            interessante! 🧠
+          </div>
+          <div class="hashtags">
+            #FunctionalProgramming #NewLanguageChallenge
+          </div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c109')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c109" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>La programmazione funzionale
+            apre la mente! Quale linguaggio stai provando?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non ti trasformi
+            in un purista che critica ogni ciclo for.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena configurato il backup automatico per tutti i miei progetti
+            importanti. Mai più panico da perdita dati! 💾
+          </div>
+          <div class="hashtags">#DataBackup #PeaceOfMind</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c110')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c110" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Saggia decisione! Il backup
+            è il nostro migliore amico invisibile.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Controlla che il backup
+            funzioni davvero. Ho brutte esperienze...
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Qualcuno ha consigli per rimanere concentrati lavorando da casa? Le
+            distrazioni sono ovunque! distractions
+          </div>
+          <div class="hashtags">#WFHLife #FocusTips</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c111')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c111" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Cuffie con cancellazione del
+            rumore, tecnica del Pomodoro e pause regolari aiutano molto!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io ho messo un cartello
+            'Non disturbare, sto compilando... la mia dichiarazione dei
+            redditi'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena partecipato a un 'Ask Me Anything' con un veterano
+            dell'industria tech. Tanti spunti interessanti! 💡 "\` Commenti:
+            @MaryBytes: "Che bella opportunità! Cosa ti ha colpito di più?"
+            @Bill_FixIt: "Gli hai chiesto perché il Wi-Fi dell'ufficio fa sempre
+            schifo?" 148.@JohnTheDev: "La mia scrivania è invasa da post-it con
+            idee e TODO. Forse dovrei digitalizzare il tutto... o forse no. 📝
+          </div>
+          <div class="hashtags">
+            #AMA #TechInsights #OrganizedChaos #ToDoList
+          </div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c112')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c112" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Io sono team post-it! Mi
+            aiutano a visualizzare meglio.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io uso i post-it per
+            coprire la webcam. Per la privacy.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena fatto un 'git push --force' sul branch sbagliato. Momento
+            di panico puro. Fortunatamente avevo un backup. 😱
+          </div>
+          <div class="hashtags">#GitMistakes #AlmostHeartAttack</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c113')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c113" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Oh no! Il terrore di ogni
+            sviluppatore! Meno male per il backup.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io lo chiamo 'testare la
+            robustezza del sistema di version control'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Quei fiumi di vermouth e di parole con @PierreDubois. Bei tempi.
+          </div>
+          <div class="hashtags">#Memories #España</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c114')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c114" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>I viaggi con gli amici sono
+            i migliori! Sembra una bella serata.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Fiumi di parole e vermouth?
+            Scommetto che il giorno dopo il codice era... interessante.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Rileggendo il discorso di Hilbert del 1930 … un mantra per ogni
+            scienziato e programmatore davanti a un problema. 🧠
+          </div>
+          <div class="hashtags">#DavidHilbert #Matematica #Inspiration</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c115')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c115" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>La sua fu una frase
+            potentissima e memorabile! Poi in lingua originale suonava ancora
+            più minacciosa. Puro spirito scientifico.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io di solito dico 'Dobbiamo
+            fixare. Fixeremo. Forse'.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Quel momento in cui il codice compila al primo tentativo dopo ore di
+            lavoro. Pura magia nera! ✨
+          </div>
+          <div class="hashtags">#CodingMagic #SmallVictories</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c116')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c116" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ahah, la migliore sensazione
+            del mondo! Goditela!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Controlla bene, di solito
+            significa che hai commentato la parte che non funzionava.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Cercando di decidere se la programmazione asincrona sia un dono
+            degli dei o una maledizione degli inferi. Forse entrambe. 🤔
+          </div>
+          <div class="hashtags">#AsyncProgramming #LoveHateRelationship</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c117')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c117" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Quando funziona è una
+            meraviglia, quando non funziona... beh, sai com'è.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>È una maledizione
+            mascherata da dono. Fidati.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            La mia pianta da ufficio sembra più interessata al mio codice di
+            alcuni colleghi. Le darò un ruolo nella prossima code review. 🌿
+          </div>
+          <div class="hashtags">#OfficeLife #PlantDrivenDevelopment</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c118')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c118" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Forse ha delle buone
+            intuizioni! Non sottovalutare il potere della natura.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Se inizia a scrivere codice
+            migliore del tuo, allora devi preoccuparti.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho sognato in pseudocodice stanotte. Forse ho bisogno di una
+            vacanza... o di più caffè. ☕😴 ” Commenti: @MaryBytes: "Capita!
+            Prenditi una pausa, John. Te la meriti." @Bill_FixIt: "Spero almeno
+            che lo pseudocodice fosse ottimizzato e senza bug." 163.@JohnTheDev:
+            "Tentando di spiegare la differenza tra UI e UX a un cliente. È come
+            spiegare i colori a un cieco, a volte. 🎨
+          </div>
+          <div class="hashtags">
+            #DeveloperDreams #NeedABreak #UIUX #ClientCommunication
+          </div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c119')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c119" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ci vuole pazienza e tante
+            metafore. Forza e coraggio!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Digli solo che uno lo fa
+            sembrare bello e l'altro lo fa funzionare bene. Forse capisce.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Finalmente sono riuscito a far funzionare quel dannato modulo
+            Bluetooth dopo due giorni di bestemmie in codice. Vittoria! 🎉
+          </div>
+          <div class="hashtags">#Hardware #IoTAdventures</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c120')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c120" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ah, il Bluetooth... gioie e
+            dolori infiniti! Ben fatto!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scommetto che ora il Wi-Fi
+            ha smesso di funzionare. È la legge.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Weekend di giardinaggio! A volte staccare completamente dal codice e
+            mettere le mani nella terra è la terapia migliore. 🪴
+          </div>
+          <div class="hashtags">#WorkLifeBalance #Gardening</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c121')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c121" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che bello John! Anch'io
+            adoro il giardinaggio per rilassarmi.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo tu non abbia
+            piantato qualche variabile globale per sbaglio.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Coding notturno con un vecchio vinile di elettronica in sottofondo.
+            Perfetto. 🎶
+          </div>
+          <div class="hashtags">#MusicForCoding #BerlinSounds</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c122')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c122" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>La musica giusta fa la
+            differenza!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non salti il
+            disco... o il server.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto provando una nuova distro Linux superleggera per il mio vecchio
+            portatile da battaglia. Vediamo se resuscita! 🐧
+          </div>
+          <div class="hashtags">#Linux #TechExperiments</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c123')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c123" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Facci sapere quale e come ti
+            trovi! Sempre utile.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Resuscita finché non provi
+            a installarci l'IDE moderno. Allora imploderà.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Pensando alla sicurezza dei nuovi moduli... Se dico 'Password Base,
+            Chiave Derivata, Funzione Due' e ci aggiungo un pizzico di 'Secure
+            Hash Algoritmo Due-Cinque-Sei', sto parlando arabo o qualcuno
+            capisce il livello di protezione che stiamo implementando? È come
+            una ricetta segreta! 🤫
+          </div>
+          <div class="hashtags">#CyberSecurity #DeepDive #CodingSecrets</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c124')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c124" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Capisco, capisco!
+            Ingredienti di alta qualità per una protezione con i fiocchi. Mi
+            piace! 👍
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Basta che la 'ricetta' non
+            sia così segreta da dimenticartela quando devi fare manutenzione,
+            John! 😉
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Maratona di film di fantascienza ieri sera. Ora ho un sacco di idee
+            (probabilmente irrealizzabili) per nuovi progetti. 🤖👽
+          </div>
+          <div class="hashtags">#SciFi #Inspiration</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c125')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c125" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Quali film hai visto? Adoro
+            la fantascienza!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che l'idea non sia
+            costruire Skynet. Di nuovo.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            La soddisfazione di chiudere 20 tab del browser dopo aver finalmente
+            risolto un problema. Piccole gioie.
+          </div>
+          <div class="hashtags">#ProblemSolved #DevLife</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c126')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c126" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>E poi ne apri altri 30 per
+            il problema successivo!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io ho solo due tab aperte:
+            Stack Overflow e il caffè.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Riunione del lunedì mattina. Avrei preferito un altro paio d'ore di
+            sonno, o di codice. 😴
+          </div>
+          <div class="hashtags">#MondayMood #Meetings</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c127')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c127" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Forza e coraggio! Almeno c'è
+            il caffè.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>La mia strategia è annuire
+            e sperare che nessuno mi faccia domande.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Quel momento imbarazzante in cui ti accorgi che stai parlando da
+            solo con il tuo codice. Capita anche a voi?
+          </div>
+          <div class="hashtags">#CodingQuirks #SoloDeveloper</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c128')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c128" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Sempre! A volte il rubber
+            ducking si evolve.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io non parlo col codice.
+            Gli urlo contro. È diverso.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Weekend di pioggia = scusa perfetta per una maratona di film e
+            magari un po' di coding leggero. 🌧️💻
+          </div>
+          <div class="hashtags">#Relax #IndoorActivities</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c129')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c129" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Goditi il meritato riposo,
+            John!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Coding leggero? Tipo 'Hello
+            World' in 15 linguaggi diversi?
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena aggiornato il mio IDE e ora tutti i miei shortcut
+            personalizzati sono spariti. Panico. 😱
+          </div>
+          <div class="hashtags">#SoftwareUpdates #TechWoes</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c130')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c130" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Oh no! Il backup dei
+            settings è fondamentale!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>È il modo dell'IDE per
+            dirti di imparare i comandi standard.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Discutendo animatamente con Bill su quale sia il miglior tema per
+            l'editor di codice. Lui preferisce il lato oscuro, io quello chiaro.
+            Battaglie epiche. 😂 @Bill_FixIt
+          </div>
+          <div class="hashtags">#LightVsDark #DevDebates</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c131')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c131" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Io sono team dark mode
+            forever! Meno affaticante per gli occhi.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Il lato oscuro ha i
+            cookie... e un contrasto migliore!
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho trovato un vecchio floppy disk con del codice che scrissi al
+            liceo. Un tuffo nel passato... e nel codice terribile. 💾
+          </div>
+          <div class="hashtags">#RetroCoding #Nostalgia</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c132')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c132" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che cimelio! Sarebbe
+            divertente provare a farlo girare.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scommetto che era scritto
+            in QBasic e pieno di GOTO.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho provato a usare Copilot per la prima volta. Interessante... e un
+            po' inquietante. 🤖
+          </div>
+          <div class="hashtags">#AICoding #FutureIsNow</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c133')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c133" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>È uno strumento potente, ma
+            il giudizio umano resta cruciale.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non inizi a
+            scrivere codice migliore del nostro e a chiedere un aumento.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            La call delle 9 di mattina dopo una notte passata a deployare. Il
+            mio cervello funziona al 10% della capacità. ☕☕☕
+          </div>
+          <div class="hashtags">#DeploymentHangover #NeedMoreCoffee</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c134')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c134" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Forza John! Almeno il deploy
+            è andato bene, spero!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io in quelle call mi limito
+            ad annuire e a sperare che nessuno noti che sto dormendo ad occhi
+            aperti.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena scoperto che un bug che mi ha perseguitato per giorni era
+            causato da un aggiornamento automatico di una libreria. 🤦
+          </div>
+          <div class="hashtags">#DependencyNightmares #AutoUpdates</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c135')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c135" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Sempre un classico! Pinna
+            quelle versioni!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>È per questo che io
+            aggiorno le librerie solo quando il sole sorge a ovest.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Sto cercando di convincere il mio capo a comprare sedie ergonomiche
+            migliori per tutto il team. La salute prima di tutto!
+          </div>
+          <div class="hashtags">#Ergonomics #TeamWelfare</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c136')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c136" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ottima iniziativa! Una buona
+            sedia fa la differenza.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Se non funziona, minaccia
+            uno sciopero delle schiene.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena finito di leggere un libro affascinante sulla storia
+            dell'informatica. È incredibile vedere da dove siamo partiti. 📜
+          </div>
+          <div class="hashtags">#TechHistory #ComputerScience</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c137')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c137" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Quale libro? Sono sempre in
+            cerca di buone letture a tema.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scommetto che non parlava
+            di quando i bug erano letteralmente insetti.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            a quella vacanza in agriturismo la scorsa estate. Pace, natura e
+            quel setterino adorabile che ci seguiva ovunque! 🐶
+          </div>
+          <div class="hashtags">#TBT #Agriturismo #DogLover</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c138')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c138" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che bei ricordi! I cani
+            rendono ogni posto più speciale.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scommetto che 'Setterino'
+            era la password del Wi-Fi dell'agriturismo.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            L'occhio di vetro sulla mia scrivania mi osserva.
+          </div>
+          <div class="hashtags">#Souvenirs #Architettura</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c139')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c139" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Oggetti che portano con sé
+            storie e atmosfere.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Ti fissa mentre lavori?
+            Chissà quante occhiatacce!
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho appena scovato un easter egg in un vecchio software che usavo
+            anni fa. Che nostalgia! 🥚
+          </div>
+          <div class="hashtags">#EasterEggs #SoftwareNostalgia</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c140')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c140" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Adoro gli easter egg! È come
+            trovare un piccolo tesoro nascosto.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non fosse un bug
+            mascherato da easter egg.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Riunione fiume oggi. Credo di aver consumato più caffè che ossigeno.
+            ☕
+          </div>
+          <div class="hashtags">#MeetingMarathon #CorporateLife</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c141')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c141" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ti capisco! A volte le
+            riunioni sembrano non finire mai.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Io conto quanti 'synergy' e
+            'paradigm shift' riesco a sentire prima di addormentarmi.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Lacrimuccia per quel semplice cifrario a 'scorrimento' che usavo da
+            ragazzino per i messaggi segreti.
+          </div>
+          <div class="hashtags">#RetroTech #Ciphers</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c142')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c142" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Un classico. Semplice ma
+            efficace per i tempi.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che i tuoi
+            'segreti' di allora non fossero le password del Wi-Fi.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            @Kenji_T mi hai fatto pensare a quella anforetta da museo. Un pezzo
+            speciale.
+          </div>
+          <div class="hashtags">#Friends #Greece</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c143')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c143" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che bel ricordo! I piccoli
+            oggetti hanno grandi storie.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo non sia maledetta.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Tentando di spiegare la differenza tra UI e UX a un cliente. È come
+            spiegare i colori a un cieco, a volte. 🎨
+          </div>
+          <div class="hashtags">#UIUX #ClientCommunication</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c144')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c144" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Ci vuole pazienza e tante
+            metafore. Forza e coraggio!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Digli solo che uno lo fa
+            sembrare bello e l'altro lo fa funzionare bene. Forse capisce.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Weekend di trekking sui sentieri costieri. L'aria di mare e zero
+            notifiche sono la cura migliore per il burnout da codice. 🌊
+          </div>
+          <div class="hashtags">#Trekking #Outdoor #DigitalDetox</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c145')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c145" style="display: none">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che meraviglia, John! Le
+            foto sono stupende.
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Scommetto che hai cercato
+            di trovare un segnale 4G anche sulla scogliera.
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Finalmente ho finito di leggere 'Sandman' di Neil Gaiman. Un
+            capolavoro assoluto. Che viaggio!
+          </div>
+          <div class="hashtags">#Comics #TheSandman #NeilGaiman</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c146')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c146" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Meraviglioso! Uno dei miei
+            preferiti di sempre. Hai letto anche gli spin-off?
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Spero che il 'Sogno' non
+            sia pieno di while(true).
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-header">
+          <span class="username">@JohnTheDev</span>
+        </div>
+        <div class="post-content">
+          <div class="post-text">
+            Ho provato a fare la pizza in casa con il lievito madre. Missione
+            compiuta! Forse la prossima volta non brucerò i bordi. 🍕
+          </div>
+          <div class="hashtags">#PizzaFattaInCasa #LievitoMadre</div>
+        </div>
+        <div class="comments-toggle" onclick="toggleComments('c147')">
+          Mostra/Nascondi commenti
+        </div>
+        <div class="comments" id="c147" style="display: block">
+          <div class="comment">
+            <span class="username">@MaryBytes</span>Che meraviglia! Sembra
+            buonissima, non essere troppo critico!
+          </div>
+          <div class="comment">
+            <span class="username">@Bill_FixIt</span>Speriamo che l'impasto non
+            abbia avuto più 'race conditions' del nostro ultimo deploy.
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleComments(id) {
+        const el = document.getElementById(id);
+        el.style.display = el.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>
